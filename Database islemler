@@ -1,0 +1,21 @@
+--finding the average salary for man workers
+select avg(salary)
+from employee
+where sex = "M" ;
+
+-- find the sum of all employess
+ select sum(salary)
+ from employee;
+#aggregation
+--find out how many females and males are
+select count(sex),sex
+from employee
+group by sex ;
+
+--find the total sales of each salesman
+SELECT SUM(total_sales) , emp_id  
+from works_with
+group by emp_id ;
+
+
+  
