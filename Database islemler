@@ -17,5 +17,17 @@ SELECT SUM(total_sales) , emp_id
 from works_with
 group by emp_id ;
 
+--% = any # charachters ,- = one charachter 
+--find any client's who are an LLC
+Select *
+from client
+where client_name  LIKE "%LLC";
+
+
+-- finy any employee that born in october ,
+select * 
+from employee
+where birth_day LIKE "____-10%" ; 
+
 
   
